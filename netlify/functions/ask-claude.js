@@ -32,7 +32,7 @@ exports.handler = async function (event) {
         'Authorization': `Bearer ${apiKey}`
       },
       body: JSON.stringify({
-        model: 'llama-3.3-70b-versatile',
+        model: 'openai/gpt-oss-20b',
         max_tokens: 400,
         messages: [
           { role: 'system', content: systemPrompt || 'Você é uma assistente pessoal brasileira. Responda em português, de forma curta, direta e natural (máximo 2 frases).' },
